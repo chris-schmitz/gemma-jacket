@@ -4,7 +4,7 @@ For christmas this year I'm making a jacket for my daughter. The plan is for the
 
 ### MVP for code and electronics
 
-![mvp of electronics](readme_attachments/mvp.png)
+[![mvp of electronics](readme_attachments/mvp.png)](https://vimeo.com/299450215)
 
 ### 3D modeling the case for the jewel
 
