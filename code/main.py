@@ -3,6 +3,7 @@ import adafruit_dotstar as dotstar
 import board
 import neopixel
 from hoodie import Hoodie
+import time
 
 
 jewel = neopixel.NeoPixel(board.A1, 7, brightness=0.1, auto_write=True)
@@ -16,12 +17,17 @@ touchR.threshold = touchR.raw_value + 200
 
 hoodie = Hoodie(jewel)
 
+ORDER = neopixel.GRB
+num_pixels = 7
+
+
 while True:
     # print(touchL.raw_value)
 
     if touchL.value and touchR.value:
         print("touched both")
-        jewel.fill((255, 255, 255))
+        hoodie.handleColor('hop')
+        # jewel.fill((255, 255, 255))
 
     elif touchL.value:
         print("touched left")
