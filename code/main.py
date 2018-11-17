@@ -14,30 +14,24 @@ touchR = TouchIn(board.A2)
 touchL.threshold = touchL.raw_value + 200
 touchR.threshold = touchR.raw_value + 200
 
-
 hoodie = Hoodie(jewel)
-
-ORDER = neopixel.GRB
-num_pixels = 7
-
 
 while True:
     # print(touchL.raw_value)
 
     if touchL.value and touchR.value:
         print("touched both")
-        hoodie.handleColor('hop')
-        # jewel.fill((255, 255, 255))
+        hoodie.handleColor(hoodie.HOP)
 
     elif touchL.value:
         print("touched left")
         dot[0] = [0, 255, 0]
-        hoodie.handleColor('wheel')
+        hoodie.handleColor(hoodie.WHEEL)
 
     elif touchR.value:
         print("touched right")
         dot[0] = [0, 255, 0]
-        hoodie.handleColor('extend')
+        hoodie.handleColor(hoodie.EXTEND)
 
     else:
         dot[0] = [255, 0, 0]
