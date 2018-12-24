@@ -7,7 +7,7 @@ For christmas this year I'm making a jacket for my daughter. The plan is for the
 I shot video of my progress as I built out the project and uploaded it all to my vimeo account.
 
 -   Overview: https://vimeo.com/308014235
--   Entire video collection:
+-   Entire video collection: https://vimeo.com/album/5642571
 
 ### MVP for code and electronics
 
